@@ -6,13 +6,12 @@
 <!DOCTYPE html5>
 <html lang="es">
 <head>
-    <meta charset="uft-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="Adriana Garavito">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/vnd.microsoft.icon" href="./img/Avocado.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" href="./assets/img/tarot.ico">
@@ -23,10 +22,10 @@
 </head>
 <body>
     <?php
-    //incluimos el archivo que comprueba el login
-    include("login.php");
-    // incluimos el archivo que comprueba los registros
-    include("registrar.php");
+        //incluimos el archivo que comprueba el login
+        include("login.php");
+        // incluimos el archivo que comprueba los registros
+        include("registrar.php");
     ?>
     <main>
         <!-- creamos el formulario de login -->

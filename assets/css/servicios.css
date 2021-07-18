@@ -30,13 +30,14 @@ body {
 
 .container {
     position: relative;
-    width: 1300px;
+    width: 1440px;
     height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     padding: 30px;
     justify-content: center;
+    margin-top: 100px;
 }
 
 .container a {
@@ -45,14 +46,14 @@ body {
     padding: 8px 20px;
     background: var(--color-midnight);
     color: var(--color-Snow-color);
-    border-radius: 40px;
+    border-radius: 8px;
     font-weight: 500;
     letter-spacing: 1px;
     text-decoration: none;
 }
 
 .container .card {
-    max-width: 200px;
+    max-width: 250px;
     position: relative;
     height: 315px;
 

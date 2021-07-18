@@ -12,7 +12,8 @@ include("agendar.php");
 
 <head>
     <title>Registro</title>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="Adriana Garavito">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,7 +36,7 @@ include("agendar.php");
 
             <form class="formulario" name="citas" action="" method="POST">
                 <h1>Agende su cita</h1>
-                <input type="text" name="nick" placeholder="Nombre de usuario" />
+                <input type="text" name="nick" value="<?php echo isset($_SESSION['nick']) ?  $_SESSION['nick'] : '' ?>" placeholder="Nombre de usuario" />
                 <label>Servicio</label><br>
                 <select name="lectura">
                     <option selected value="0">--</option>
@@ -44,12 +45,12 @@ include("agendar.php");
                     <option value="2">Lectura Kármica</option>
                     <option value="1">Lectura de Lenormand</option>
                     <option value="5">Lectura Gitana</option>
-                </select><br>
+                </select>
                 <label>Fecha</label>
                 <div class="datetimepicker">
                     <input type="date" id="date" value="fechaCita" name="fechaCita">
                 </div>
-                <input type="submit" name="reservar" value="Reservar">
+                <input type="submit" name="reservar" />
                 <p class="error-message"><?php echo $errorMesssage; ?> </p>
                 <p class="message"><?php echo $message; ?></p>
             </form>

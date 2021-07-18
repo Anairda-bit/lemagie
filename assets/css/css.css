@@ -37,11 +37,13 @@ body {
 }
 
 form {
-    padding: 50px 20px;
+    
     background-color: var(--color-Snow-color);
-    margin-top: 70px;
-    padding-top: 28px;
-    margin-bottom: 30px
+
+}
+
+form h1 {
+    margin-bottom: 2rem;
 }
 
 header {
@@ -80,7 +82,7 @@ header ul li a {
 
 }
 
-input {
+input, select {
     display: block;
     width: 100%;
     margin: 1rem 0;
@@ -92,37 +94,28 @@ input {
 input[type='submit'] {
     background-color: var(--color-midnight);
     color: var(--color-Snow-color);
-    width: calc(80% - 20px);
-    margin: 0 10%;
-    margin-top: 22px;
+    margin: 10px 0;
     border: none;
     border-radius: 8px;
     text-transform: uppercase;
 }
+
 
 header .content {
     width: 100%;
     max-width: var(--max-w);
     margin: 0 auto;
 
-
 }
 
 .box {
 
     width: 100%;
-    max-width: 20rem;
+    max-width: 25rem;
     margin: auto;
     border-radius: 5px;
     overflow: hidden;
-    padding: 1rem;
-
-
-
-
-
-    /*  */
-
+    padding: 3rem 2rem;
     background: rgba(255, 255, 255, 0.60);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(2.0px);
@@ -150,4 +143,8 @@ header .content {
 .formulario a {
     color: var(--color-xiketic);
     font-size: smaller;
+}
+
+.fluid {
+    display:block;
 }

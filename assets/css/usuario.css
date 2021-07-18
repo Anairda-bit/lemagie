@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    height: 100%;
+    --max-w: 1440px;
+
+    --color-Snow-color: #FFFBFF;
+    --color-FloralWhite-color: #FFFCF7;
+    --color-english-violet: #55395cff;
+    --color-purple-mountain-majesty: #ab6cbaff;
+    --color-russian-violet: #2d0936ff;
+    --color-midnight: #671a78ff;
+    --color-xiketic: #0d020fff;
+    --color-russian-trasparent-violet: #2d0936c2;
+
+
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    line-height: 1.6;
+    background: var(--color-Snow-color);
+}
+
+.card {
+    background-image: url(../img/ulalume.png);
+    color: var(--color-Snow-color);
+    background-size: auto;
+    background-position: center;
+    padding: 10rem 0 0;
+    max-width: 40ch;
+    border-radius: 1rem;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card h2 {
+    align-self: center;
+    justify-content: center;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.card p {
+    align-self: center;
+    justify-content: center;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.card-content {
+    --padding: 1.5rem;
+    padding: var(--padding);
+
+    background: linear-gradient(hsl(0, 0%, 0%, 0), hsl(260deg 29% 34% / 33%)20%, hsl(282deg 87% 16% / 72%));
+
+}
+
+.cardTitle {
+    position: relative;
+    width: 100%;
+}
+
+/* .cardTitle::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    /* width: calc(100% + var(--padding)); */
+/* left: var(--padding); */
+/* width: 100%; */
+/* background: var(--color-russian-trasparent-violet); */
+/* left: calc(var(--padding)*-1); */
+/* bottom: 0; */
+
+
+.button {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-russian-trasparent-violet);
+    background-color: var(--color-Snow-color);
+    padding: 8px 10px;
+    border-radius: .25em;
+    margin-top: 20px;
+}
+
+.button:hover,
+button.focus {
+    background-color: var(--color-russian-trasparent-violet);
+    color: var(--color-Snow-color);
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header .logo {
+    position: relative;
+    max-width: 80px;
+
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    display: inline-block;
+    color: var(--color-midnight);
+    font-weight: 400;
+    margin-left: 10px;
+    text-decoration: none;
+
+}
+
+@media(max-width:991px) {
+
+
+    header {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    header .logo {
+        max-width: 90px;
+    }
+
+    .card {
+
+        margin-top: 80px;
+    }
+
+    header ul li {
+
+        margin: 5px 0;
+        font-size: 1.5em;
+
+    }
+}

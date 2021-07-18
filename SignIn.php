@@ -1,16 +1,10 @@
 <?php
-include('inc/functions.php');
-// llamamos al metodo que comprueba la sesion 
-checkSession();
-//incluimos el archivo que comprueba el login
-include("login.php");
-// incluimos el archivo que comprueba los registros
-include("registrar.php");
+    include('inc/functions.php');
+    // llamamos al metodo que comprueba la sesion 
+    checkSession();
 ?>
-
 <!DOCTYPE html5>
 <html lang="es">
-
 <head>
     <meta charset="uft-8">
 
@@ -27,9 +21,13 @@ include("registrar.php");
     <link rel="stylesheet" href="./assets/css/login.css" />
     <title>Login</title>
 </head>
-
 <body>
-
+    <?php
+    //incluimos el archivo que comprueba el login
+    include("login.php");
+    // incluimos el archivo que comprueba los registros
+    include("registrar.php");
+    ?>
     <main>
         <!-- creamos el formulario de login -->
         <div class="container" id="container">

@@ -4,6 +4,7 @@ include('inc/functions.php');
 checkSession();
 include("eliminar.php");
 // incluimos el paquete funciones
+checkAuth();
 ?>
 
 <!DOCTYPE html5>

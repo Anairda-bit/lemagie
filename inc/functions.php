@@ -10,31 +10,18 @@ function checkSession()
     }
 }
 
-function checkVisits()
-{ //funcion para revisar la cantidad de visitas del usuario
-
-    if (isset($_SESSION['visits'])) { //comprobamos con el isset la variable visist
-
-        $_SESSION['visits']++; //si existe la aumentamos
-
-    } else {
-
-        $_SESSION['visits'] = 1; //en caso contrario el valor de la variable es igual a 1
-
-    }
-}
-
 function checkAuth()
 { //funcion para cerrar sesion
 
-    if (!isset($_SESSION['auth'])) {
+    if (!isset($_SESSION['nick'])) {
 
-        header("Location: pagLogin.php");
+        header("Location: index.php");
+
     }
 }
 
 function destroySession()
 { //funcion para destruir la sesion
     session_destroy(); //metodo para destruir la sesion
-    header("Location: pagLogin.php");
+    header("Location: index.php");
 }

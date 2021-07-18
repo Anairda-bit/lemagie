@@ -1,7 +1,8 @@
 <?php
 // llamamos al metodo que comprueba la sesion 
 include('inc/functions.php');
-checkSession();
+    checkSession();
+    checkAuth();
 ?>
 <!DOCTYPE html5>
 <html lang="es">

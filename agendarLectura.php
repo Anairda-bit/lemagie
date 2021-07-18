@@ -2,6 +2,7 @@
 // llamamos al metodo que comprueba la sesion 
 include('inc/functions.php');
 checkSession();
+checkAuth();
 
 include("agendar.php");
 ?>

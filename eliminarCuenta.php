@@ -21,6 +21,7 @@ include("eliminar.php");
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/img/tarot.ico">
     <link rel="stylesheet" href="./assets/css/css.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>Cambiar Contraseña</title>
 </head>
 
@@ -31,12 +32,14 @@ include("eliminar.php");
         <div class="box">
 
             <!-- el action esta en el mismo php, pero de todos modos lo mencionamos, el metodo usado el metodo post -->
-            <form class="formulario" name="eliminar" action="" method="POST">
+            <form class="formulario" name="eliminar" action="" method="POST" id="formm">
                 <h1>Eliminar Cuenta</h1>
                 <label>Nombre de Usuario</label>
                 <input type="text" name="nick" placeholder="Nombre de usuario" />
                 <label>Email</label>
-                <input type="text" name="email" placeholder="Email">
+                <input type="text" name="email" placeholder="Email" id="emailto" onkeydown="validation()">
+                <script type="text/javascript" src="./assets/Js/email.js"></script>
+                <span id="text"></span>
                 <label>Contraseña</label>
                 <input type="password" name="pass" placeholder="Contraseña" />
                 <input type="submit" name="eliminar" value="Eliminar" />

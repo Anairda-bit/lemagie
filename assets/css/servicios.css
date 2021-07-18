@@ -30,6 +30,7 @@ body {
 
 .container {
     position: relative;
+    margin-top: 100px;
     width: 1300px;
     height: 100vh;
     display: flex;

@@ -16,7 +16,7 @@ checkSession();
     <link rel="shortcut icon" href="./assets/img/tarot.ico">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/servicios.css" />
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>Lecturas </title>
 </head>
 
@@ -45,8 +45,7 @@ checkSession();
             </div>
             <div class="content">
 
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et adipisci aspernatur hic asperiores deserunt mollitia quibusdam
-                    illo magni laborum? Repellendus quo suscipit qui ipsum laboriosam tempore, natus nam enim ullam.</p>
+                <p>Esta Tirada tiene la capacidad de distinguir entre el pasado, el presente y futuro de todo lo que respecta al campo del amor.</p>
                 <a href="agendarLectura.php">Reservar</a>
             </div>
         </div>
@@ -69,8 +68,8 @@ checkSession();
             </div>
             <div class="content">
 
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et adipisci aspernatur hic asperiores deserunt mollitia quibusdam
-                    illo magni laborum? Repellendus quo suscipit qui ipsum laboriosam tempore, natus nam enim ullam.</p>
+                <p>Descubrirás los mensajes más sorprendentes y lo acertado de sus predicciones,
+                    descubre lo que traes del pasado, como está tu presente y que debes de resolver y mira hacia tu futuro.</p>
                 <a href="agendarLectura.php">Reservar</a>
             </div>
         </div>
@@ -81,8 +80,8 @@ checkSession();
 
             </div>
             <div class="content">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et adipisci aspernatur hic asperiores deserunt mollitia quibusdam
-                    illo magni laborum? Repellendus quo suscipit qui ipsum laboriosam tempore, natus nam enim ullam.</p>
+                <p>Te permitirá reflexionar sobre la situacion actual para que puedas comprender tu camino de vida
+                    y darte las respuestas que requieres para seguir adelante en tu camino</p>
                 <a href="agendarLectura.php">Reservar</a>
             </div>
         </div>

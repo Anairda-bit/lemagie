@@ -24,6 +24,7 @@ include("agendar.php");
     <link rel="shortcut icon" href="./assets/img/tarot.ico">
     <script type="text/javascript" src=".assets/Js/datepicker.js"></script>
     <link rel="stylesheet" href="./assets/css/css.css" type="text/css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </head>
 

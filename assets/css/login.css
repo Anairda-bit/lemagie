@@ -17,6 +17,8 @@ html {
     --color-russian-violet: #2d0936ff;
     --color-midnight: #671a78ff;
     --color-xiketic: #0d020fff;
+    --color-RoseMadder-color: #DF2935;
+    --color-Pistachio-color: #8ED081;
 
 }
 
@@ -25,12 +27,12 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: var(--color-purple-mountain-majesty);
+    background: var(--color-FloralWhite-color);
     transition: 0.5s;
 }
 
 body.active {
-    background: var(--color-english-violet);
+    background: var(--color-Snow-color);
 }
 
 .container {
@@ -49,8 +51,11 @@ body.active {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 5px 45 px rgba(0, 0, 0, 0.15);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2.0px);
+    -webkit-backdrop-filter: blur(2.0px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
 
 }
 
@@ -65,20 +70,26 @@ body.active {
 }
 
 .violettBg .box h2 {
-    color: var(--color-Snow-color);
+    color: var(--color-xinetic-color);
     font-size: 1.2em;
     font-weight: 500;
     margin-bottom: 10px;
 }
 
+
+
 .violettBg .box button {
     cursor: pointer;
     padding: 10px 20px;
-    background: var(--color-Snow-color);
-    color: var(--color-xiketic);
+    background: var(--color-purple-mountain-majesty);
+    color: var(--color-Snow-color);
     font-size: 16px;
     font-weight: 500;
-    border: none;
+
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2.0px);
+    -webkit-backdrop-filter: blur(2.0px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .formBx {
@@ -141,6 +152,7 @@ body.active {
     color: var(--color-xiketic);
     margin-bottom: 20px;
     font-weight: 500;
+    align-self: center;
 }
 
 .formBx .form form input {
@@ -153,12 +165,23 @@ body.active {
 
 }
 
+.formBx .formulario input {
+    margin-bottom: 10px;
+}
+
 .formBx .form form input[type="submit"] {
     background: var(--color-purple-mountain-majesty);
     border: none;
     color: var(--color-Snow-color);
     max-width: 100px;
     cursor: pointer;
+
+
+    align-self: center;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2.0px);
+    -webkit-backdrop-filter: blur(2.0px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .formBx.active .SignIn input[type="submit"] {
@@ -167,11 +190,70 @@ body.active {
 
 .formBx .form form .forgot {
     color: var(--color-xiketic);
+    align-self: center;
 
 }
 
 .withRegister {
     height: 600px;
+}
+
+#formm #text {
+    width: 300px;
+    background: var(--color-Snow-color);
+    outline: none;
+    padding: 2px;
+    border-radius: 6px;
+    color: var(--color-xinetic-color);
+}
+
+#text {
+    display: block;
+    color: var(--color-Snow-color);
+    font-weight: 500i;
+    padding: 5px;
+
+}
+
+#formm #mensaje #inputBox:before {
+    content: "";
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    bottom: 5px;
+    height: 24px;
+    background-color: url(../img/invalid.png);
+    background-size: cover;
+    z-index: 100;
+}
+
+#formm #mensaje {
+    width: 300px;
+    background: var(--color-Snow-color);
+    outline: none;
+    padding: 2px;
+    border-radius: 6px;
+    color: var(--color-xinetic-color);
+}
+
+#mensaje {
+    display: block;
+    color: var(--color-Snow-color);
+    font-weight: 500i;
+    padding: 5px;
+
+}
+
+#formm #mensaje #inputBox:before {
+    content: "";
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    bottom: 5px;
+    height: 24px;
+    background-color: url(../img/invalid.png);
+    background-size: cover;
+    z-index: 100;
 }
 
 @media(max-width:991px) {

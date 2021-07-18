@@ -19,6 +19,7 @@ include("consultarUsuario.php");
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/img/tarot.ico">
     <link rel="stylesheet" href="./assets/css/usuario.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>Área Clientes </title>
 </head>
 

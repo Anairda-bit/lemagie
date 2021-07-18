@@ -43,9 +43,9 @@
             <li><img src="./assets/img/carta-calavera-one.png" onclick="imgSlider('./assets/img/cartas-calavera-par.png');changeCircleColor('#55395cff')"></li>
         </ul>
         <ul class="sci">
-            <li><a href="#"><img src="./assets/img/facebook.ico"></a></li>
-            <li><a href="#"><img src="./assets/img/pinterest.ico"></a></li>
-            <li><a href="#"><img src="./assets/img/instagram.ico"></a></li>
+            <li><a href="https://www.facebook.com/"><img src="./assets/img/facebook.ico"></a></li>
+            <li><a href="https://www.pinterest.es/"><img src="./assets/img/pinterest.ico"></a></li>
+            <li><a href="https://www.instagram.com/"><img src="./assets/img/instagram.ico"></a></li>
         </ul>
     </section>
 </body>

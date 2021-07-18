@@ -25,7 +25,6 @@
             <div class="toggle" onclick="toggleMenu();"></div>
             <ul class="navigation">
                 <li><a href="SignIn.php">Área Clientes</a></li>
-                <li><a href="#">Contáctanos</a></li>
             </ul>
         </header>
         <div class="content">

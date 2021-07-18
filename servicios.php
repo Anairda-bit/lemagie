@@ -1,8 +1,8 @@
 <?php
 // llamamos al metodo que comprueba la sesion 
 include('inc/functions.php');
-    checkSession();
-    checkAuth();
+checkSession();
+checkAuth();
 ?>
 <!DOCTYPE html5>
 <html lang="es">
@@ -35,8 +35,7 @@ include('inc/functions.php');
             </div>
             <div class="content">
 
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et adipisci aspernatur hic asperiores deserunt mollitia quibusdam
-                    illo magni laborum? Repellendus quo suscipit qui ipsum laboriosam tempore, natus nam enim ullam.</p>
+                <p>Una mirada a los aspectos del amor, la economia, amistades, trabajo y salud de forma general.</p>
                 <a href="agendarLectura.php">Reservar</a>
             </div>
         </div>
@@ -58,8 +57,9 @@ include('inc/functions.php');
             </div>
             <div class="content">
 
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et adipisci aspernatur hic asperiores deserunt mollitia quibusdam
-                    illo magni laborum? Repellendus quo suscipit qui ipsum laboriosam tempore, natus nam enim ullam.</p>
+                <p>Descubrirás cual es tu misión en esta reencarnación, qué debes trabajar, en qué debes trascender
+                    para tu correcta evolución. Saber cual es el objetivo que tienes en esta vida ayudará a superar
+                    las pruebas para lograrlo. Con esta tirada obtendrás una valiosa información que te servirá en tu avance personal y espiritual</p>
                 <a href="agendarLectura.php">Reservar</a>
             </div>
         </div>

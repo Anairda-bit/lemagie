@@ -10,7 +10,8 @@ include("eliminar.php");
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="Adriana Garavito">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,7 +36,7 @@ include("eliminar.php");
             <form class="formulario" name="eliminar" action="" method="POST" id="formm">
                 <h1>Eliminar Cuenta</h1>
                 <label>Nombre de Usuario</label>
-                <input type="text" name="nick" placeholder="Nombre de usuario" />
+                <input type="text" name="nick" placeholder="Nombre de usuario" value="<?php echo isset($_SESSION['nick']) ?  $_SESSION['nick'] : '' ?>" />
                 <label>Email</label>
                 <input type="text" name="email" placeholder="Email" id="emailto" onkeydown="validation()">
                 <script type="text/javascript" src="./assets/Js/email.js"></script>

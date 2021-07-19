@@ -1,7 +1,9 @@
 <?php
-// llamamos al metodo que comprueba la sesion 
+// incluimos el paquete de funciones
 include('inc/functions.php');
+// llamamos al metodo que comprueba la sesion 
 checkSession();
+// llamamos al metodo que permite la privacidad de paginas
 checkAuth();
 ?>
 <!DOCTYPE html5>
@@ -12,17 +14,20 @@ checkAuth();
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- fuentes de texto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="shortcut icon" href="./assets/img/tarot.ico">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- icono de titulo -->
+    <link rel="shortcut icon" href="./assets/img/tarot.ico">
+    <!-- css especifico de esta pagina -->
     <link rel="stylesheet" href="./assets/css/servicios.css" />
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <title>Lecturas </title>
+    <!-- titulo de la pagina -->
+    <title>La Magie - Lecturas </title>
 </head>
 
 <body>
+    <!-- incluimos el header -->
     <?php include "header.php"; ?>
     <!-- <div class="circle"></div>
     <div class="circle2"></div> -->

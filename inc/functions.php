@@ -11,12 +11,11 @@ function checkSession()
 }
 
 function checkAuth()
-{ //funcion para cerrar sesion
+{ //funcion para controlar el acceso a paginas de acceso solo con sesion iniciada
 
     if (!isset($_SESSION['nick'])) {
 
         header("Location: index.php");
-
     }
 }
 

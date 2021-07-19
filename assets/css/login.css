@@ -8,8 +8,7 @@
 
 html {
 
-    --max-w: 1440px;
-
+    /* colores del proyecto */
     --color-Snow-color: #FFFBFF;
     --color-FloralWhite-color: #FFFCF7;
     --color-english-violet: #55395cff;
@@ -52,6 +51,7 @@ body.active {
     justify-content: center;
     align-items: center;
     background: rgba(255, 255, 255, 0.15);
+    /* efecto cristal */
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(2.0px);
     -webkit-backdrop-filter: blur(2.0px);
@@ -85,7 +85,7 @@ body.active {
     color: var(--color-Snow-color);
     font-size: 16px;
     font-weight: 500;
-
+    /* efecto crsital */
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(2.0px);
     -webkit-backdrop-filter: blur(2.0px);
@@ -175,9 +175,8 @@ body.active {
     color: var(--color-Snow-color);
     max-width: 100px;
     cursor: pointer;
-
-
     align-self: center;
+    /* efecto cristal */
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(2.0px);
     -webkit-backdrop-filter: blur(2.0px);

@@ -31,13 +31,14 @@ main {
 body {
     display: flex;
     min-height: 100%;
+    place-items: center;
     flex-direction: column;
     background-color: var(--color-Snow-color);
     font-family: 'Poppins', sans-serif;
 }
 
 form {
-    
+
     background-color: var(--color-Snow-color);
 
 }
@@ -82,7 +83,8 @@ header ul li a {
 
 }
 
-input, select {
+input,
+select {
     display: block;
     width: 100%;
     margin: 1rem 0;
@@ -116,6 +118,7 @@ header .content {
     border-radius: 5px;
     overflow: hidden;
     padding: 3rem 2rem;
+    /* efecto cristal */
     background: rgba(255, 255, 255, 0.60);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(2.0px);
@@ -146,5 +149,87 @@ header .content {
 }
 
 .fluid {
-    display:block;
+    display: block;
+}
+
+@media(max-width:991px) {
+
+
+
+    header {
+        padding: 10px;
+
+    }
+
+
+
+    header .logo {
+        max-width: 90px;
+    }
+
+    .container {
+
+        margin-top: 100px;
+    }
+
+    header ul {
+        display: none;
+    }
+
+
+    /* codigo de la hamburgesita */
+    .toggle {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background: url(../img/menu.png);
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        flex-shrink: 0;
+        z-index: 11;
+
+    }
+
+    .toggle.active {
+        background: url(../img/cerrar.png);
+        background-size: 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        position: fixed;
+        right: 20px;
+    }
+
+    /*  */
+
+    header ul.navigation.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: var(--color-Snow-color);
+        z-index: 10;
+    }
+
+    header ul li {
+
+        margin: 5px 0;
+        font-size: 1.5em;
+
+    }
+
+    header ul li a {
+
+
+        margin: 5px 0;
+        font-size: 1em;
+
+    }
 }

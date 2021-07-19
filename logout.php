@@ -1,4 +1,4 @@
-<!-- codigo para dado en caso que se cierre la sesion -->
+<!-- codigo para el cierre de sesion -->
 <?php
 // incluimos el paquete funciones 
 include('inc/functions.php');

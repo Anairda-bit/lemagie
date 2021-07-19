@@ -1,9 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-
+    font-family: 'Poppins', sans-serif;
 }
 
 html {
@@ -24,107 +23,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--color-Snow-color);
-
-}
-
-.container {
-    position: relative;
-    margin-top: 100px;
-    width: 1440px;
-    height: 100vh;
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    padding: 30px;
-    justify-content: center;
-    margin-top: 100px;
-}
-
-.container a {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 8px 20px;
-    background: var(--color-midnight);
-    color: var(--color-Snow-color);
-    border-radius: 8px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-decoration: none;
-}
-
-.container .card {
-    max-width: 250px;
-    position: relative;
-    height: 315px;
-
-    border-radius: 10px;
-    margin: 30px 10px;
-    padding: 20px 15px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 5px 202 rgba(0, 0, 0, 0.3);
-    transition: all 1s ease-in-out;
-    align-items: center;
-
-    /*  */
-
-    background: rgba(255, 255, 255, 0.60);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(2.0px);
-    -webkit-backdrop-filter: blur(2.0px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    /*  */
-}
-
-.container .card:hover,
-.card:focus {
-    height: auto;
-    transition: all 0.3s ease-in-out;
-
-}
-
-.container .card .imgBox {
-    position: relative;
-    width: 180px;
-
-    top: 10px;
-    z-index: 1;
-    box-shadow: 0 5px 202 rgba(0, 0, 0, 0.2);
-
-}
-
-.container .card .imgBox h2 {
-    text-align: center;
-}
-
-.container .card .content {
-    position: relative;
-    margin-top: -50px;
-    padding: 10px 15px;
-    text-align: center;
-    color: var(--color-xiketic);
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.2s ease-in-out;
-}
-
-.container .card:hover .content {
-    visibility: visible;
-    opacity: 1;
-    margin-top: 10px;
-    transition: all 0.2s ease-in-out;
-
-}
-
-.container .card .imgBox img {
-    max-width: 100%;
-    border-radius: 4px;
-
+    min-height: 100vh;
 }
 
 /* codigo del header */
-
 header {
     position: absolute;
     top: 0;
@@ -162,6 +64,137 @@ header ul li a {
 }
 
 
+.container {
+
+    position: relative;
+    margin-top: 100px;
+    width: 1280px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.container .cards {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+
+    flex-direction: column;
+    padding: 20px 15px;
+    align-items: center;
+    box-shadow: 0 5px 202 rgba(0, 0, 0, 0.3);
+
+    background: rgba(255, 255, 255, 0.60);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2.0px);
+    -webkit-backdrop-filter: blur(2.0px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    /*  */
+
+}
+
+.container .cards .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    z-index: 100000;
+    transform-origin: top;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+.container .cards:hover .imgBx {
+    transform: translateY(30px) scale(0.5);
+}
+
+.container .cards .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .cards .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 30px;
+    transition: 0.5;
+}
+
+.container .cards .content:hover {
+    transform: translateY(0);
+}
+
+.container .cards .content .details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container .cards .content .details h2 {
+    color: var(--color-xiketic);
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.container .cards .content .details h2 span {
+    font-size: 0.8em;
+    font-weight: 400;
+    color: var(--color-purple-mountain-majesty);
+}
+
+.social_icons {
+    position: relative;
+    display: flex;
+    margin-top: 5px;
+
+}
+
+.social_icons li {
+    list-style: none;
+    margin: 4px;
+
+}
+
+.social_icons li a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(109, 82, 116);
+    border-radius: 50%;
+    font-size: 1.5em;
+    color: var(--color-Snow-color);
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.social_icons li a:hover {
+    transform: rotate(360deg);
+    background: rgb(169, 124, 180);
+}
 
 @media(max-width:991px) {
 
@@ -186,7 +219,7 @@ header ul li a {
     }
 
 
-
+    /* codigo de la hamburgesita */
     .toggle {
         position: relative;
         width: 30px;

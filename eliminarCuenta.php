@@ -2,9 +2,11 @@
 include('inc/functions.php');
 // llamamos al metodo que comprueba la sesion 
 checkSession();
-include("eliminar.php");
-// incluimos el paquete funciones
+// llamamos al metodo que comprueba la privacidad de la pagina
 checkAuth();
+include("eliminar.php");
+// incluimos el archivo que nos permitira eliminar la cuenta
+
 ?>
 
 <!DOCTYPE html5>
@@ -12,47 +14,47 @@ checkAuth();
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="Adriana Garavito">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/vnd.microsoft.icon" href="./img/Avocado.ico">
+    <!-- fuentes de texto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- icono del titulo -->
     <link rel="shortcut icon" href="./assets/img/tarot.ico">
+    <!-- css especifico de esta pagina -->
     <link rel="stylesheet" href="./assets/css/css.css" />
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <title>Cambiar Contraseña</title>
+    <title>La Magie - Eliminar Cuenta</title>
 </head>
 
 <body>
+    <!-- incluimos el header -->
     <?php include "header.php"; ?>
     <main>
-        <!-- creamos el formulario de login -->
-        <div class="box">
+        <div class="container">
+            <div class="box">
 
-            <!-- el action esta en el mismo php, pero de todos modos lo mencionamos, el metodo usado el metodo post -->
-            <form class="formulario" name="eliminar" action="" method="POST" id="formm">
-                <h1>Eliminar Cuenta</h1>
-                <label>Nombre de Usuario</label>
-                <input type="text" name="nick" placeholder="Nombre de usuario" value="<?php echo isset($_SESSION['nick']) ?  $_SESSION['nick'] : '' ?>" />
-                <label>Email</label>
-                <input type="text" name="email" placeholder="Email" id="emailto" onkeydown="validation()">
-                <script type="text/javascript" src="./assets/Js/email.js"></script>
-                <span id="text"></span>
-                <label>Contraseña</label>
-                <input type="password" name="pass" placeholder="Contraseña" />
-                <input type="submit" name="eliminar" value="Eliminar" />
-                <!-- tenemos un enlace que redirecciona al potencial usuario para que se registre en caso de carecer de cuenta -->
+                <!-- el action esta en el mismo php, pero de todos modos lo mencionamos, el metodo usado el metodo post -->
+                <form class="formulario" name="eliminar" action="" method="POST" id="formm">
+                    <h1>Eliminar Cuenta</h1>
+                    <label>Nombre de Usuario</label>
+                    <!-- este campo lo rellenamos con contenido de la variable SESSION, en caso de tener contenido -->
+                    <input type="text" name="nick" placeholder="Nombre de usuario" value="<?php echo isset($_SESSION['nick']) ?  $_SESSION['nick'] : '' ?>" />
+                    <label>Email</label>
+                    <input type="text" name="email" placeholder="Email" id="emailto" onkeydown="validation()">
+                    <!-- script de validacion del email -->
+                    <script type="text/javascript" src="./assets/Js/email.js"></script>
+                    <span id="text"></span>
+                    <label>Contraseña</label>
+                    <input type="password" name="pass" placeholder="Contraseña" />
+                    <input type="submit" name="eliminar" value="Eliminar" />
+                </form>
 
-
-            </form>
-
+            </div>
         </div>
     </main>
-    <!-- incluimos el footer -->
+
 
 </body>
 

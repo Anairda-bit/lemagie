@@ -11,7 +11,7 @@
 
 html {
     height: 100%;
-    --max-w: 1440px;
+    /* colores usados  */
 
     --color-Snow-color: #FFFBFF;
     --color-FloralWhite-color: #FFFCF7;
@@ -72,17 +72,6 @@ body {
     width: 100%;
 }
 
-/* .cardTitle::after {
-    content: "";
-    position: absolute;
-    height: 4px;
-    /* width: calc(100% + var(--padding)); */
-/* left: var(--padding); */
-/* width: 100%; */
-/* background: var(--color-russian-trasparent-violet); */
-/* left: calc(var(--padding)*-1); */
-/* bottom: 0; */
-
 
 .button {
     cursor: pointer;
@@ -137,6 +126,7 @@ header ul li a {
 
 }
 
+/* version movil */
 @media(max-width:991px) {
 
 
@@ -154,10 +144,63 @@ header ul li a {
         margin-top: 80px;
     }
 
+    header ul {
+        display: none;
+    }
+
+
+    /* codigo de la hamburgesita */
+    .toggle {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background: url(../img/menu.png);
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        flex-shrink: 0;
+        z-index: 11;
+
+    }
+
+    .toggle.active {
+        background: url(../img/cerrar.png);
+        background-size: 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        position: fixed;
+        right: 20px;
+    }
+
+    /*  */
+    header ul.navigation.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: var(--color-Snow-color);
+        z-index: 10;
+    }
+
     header ul li {
 
         margin: 5px 0;
         font-size: 1.5em;
+
+    }
+
+    header ul li a {
+
+
+        margin: 5px 0;
+        font-size: 1em;
 
     }
 }

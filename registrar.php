@@ -70,6 +70,7 @@ if (isset($_POST["registro"])) { //si se envia la orden de registro
         // en caso de que no este lleno alguno de los campos o 
         //no se cumplan las condiciones lo comunicamos 
         $errormessage = "Debe rellenar todos los campos";
+        echo "<script> alert('" . $errormessage . "'); </script>";
     }
 }
 

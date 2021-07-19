@@ -2,6 +2,7 @@
 //conecta a la base de datos
 include("con_db.php");
 $nick = $_SESSION['nick'];
+// pedimos a la base de datos que nos mande todo del usuario donde el apodo sea igual al nick (ya que el nick es un dato unico)
 $consulta = "SELECT * FROM `usuarios` WHERE `Apodo` = '$nick'";
 $resultado = mysqli_query($conex, $consulta);
 
@@ -16,7 +17,8 @@ if ($resultado == true) {
             $passww = $row["passw"];
         }
     } else {
-        echo "Sin resultados";
+
+        echo "<script> alert('Sin Resultados'); </script>";
     }
 } else {
     echo 'nada';

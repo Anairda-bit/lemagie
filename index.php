@@ -6,15 +6,19 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- fuentes de texto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="shortcut icon" href="./assets/img/tarot.ico">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- icono del titulo -->
+    <link rel="shortcut icon" href="./assets/img/tarot.ico">
+    <!-- script js -->
     <script type="text/javascript" src="./assets/Js/landing.js"></script>
+    <script type="text/javascript" src="./assets/Js/toggle.js"></script>
+    <!-- css especifico para esta pagina -->
     <link rel="stylesheet" href="./assets/css/landing.css" />
-
-    <title>Landing </title>
+    <!-- titulo de esta pagina -->
+    <title>La Magie - Inicio</title>
 </head>
 
 <body>
@@ -25,6 +29,7 @@
             <div class="toggle" onclick="toggleMenu();"></div>
             <ul class="navigation">
                 <li><a href="SignIn.php">Área Clientes</a></li>
+                <li><a href="somos.php">¿Quienes Somos?</a></li>
             </ul>
         </header>
         <div class="content">

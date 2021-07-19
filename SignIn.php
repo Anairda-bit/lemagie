@@ -1,4 +1,5 @@
 <?php
+// incluimos el paquete funciones
 include('inc/functions.php');
 // llamamos al metodo que comprueba la sesion 
 checkSession();
@@ -12,22 +13,24 @@ checkSession();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="Adriana Garavito">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- fuentes de texto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="shortcut icon" href="./assets/img/tarot.ico">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- icono del titulo -->
+    <link rel="shortcut icon" href="./assets/img/tarot.ico">
+    <!-- css especifico de esta pagina -->
     <link rel="stylesheet" href="./assets/css/login.css" />
-    <title>Login</title>
+    <!-- titulo -->
+    <title>La Magie - Login</title>
 </head>
 
 <body>
     <?php
-        //incluimos el archivo que comprueba el login
-        include("login.php");
-        // incluimos el archivo que comprueba los registros
-        include("registrar.php");
+    //incluimos el archivo que comprueba el login
+    include("login.php");
+    // incluimos el archivo que comprueba los registros
+    include("registrar.php");
     ?>
     <main>
         <!-- creamos el formulario de login -->
@@ -44,7 +47,6 @@ checkSession();
             </div>
             <div class="formBx">
                 <div class="form SignInForm">
-                    <!-- el action esta en el mismo php, pero de todos modos lo mencionamos, el metodo usado el metodo post -->
                     <!-- Aqui va el formulario de inicio de sesion!! -->
                     <form class="formulario" name="login" action="" method="POST">
                         <h3>Log In!</h3>
@@ -66,16 +68,16 @@ checkSession();
                         <input type="text" name="surname" placeholder="Ingrese su Apellido">
 
                         <input type="text" name="email" id="emailto" onkeydown="validation()" placeholder="Ingrese su Email">
+                        <!-- script de validacion del email -->
                         <script type="text/javascript" src="./assets/Js/email.js"></script>
                         <span id="text"></span>
                         <label>Fecha de nacimiento</label>
                         <input type="date" name="naci" class="datetimepicker">
                         <input type="password" name="pass" max=8 placeholder="Introduzca su contraseña" id="pwr" onkeydown="validate()">
+                        <!-- script del validador de contraseñas -->
                         <script type="text/javascript" src="./assets/Js/passw.js"></script>
                         <span id="mensaje"></span>
                         <input type="submit" name="registro" value="Sign Up!">
-
-
                     </form>
                 </div>
             </div>
@@ -83,6 +85,7 @@ checkSession();
 
         </div>
     </main>
+    <!-- script para la animacion del login -->
     <script type="text/javascript" src="./assets/Js/login.js"></script>
 
 </body>

@@ -51,7 +51,10 @@ include("actualizarPassw.php");
                     <script type="text/javascript" src="./assets/Js/email.js"></script>
                     <span id="text"></span>
                     <label>Contraseña Nueva</label>
-                    <input type="password" name="pass" placeholder="Contraseña" />
+                    <input type="password" name="pass" max=8 placeholder="Introduzca su contraseña" id="pwr" onkeydown="validate()">
+                    <!-- script del validador de contraseñas -->
+                    <script type="text/javascript" src="./assets/Js/passw.js"></script>
+                    <span id="mensaje"></span>
                     <input type="submit" name="cambiar" value="Cambiar" />
                     <!-- tenemos un enlace que redirecciona al potencial usuario para que se registre en caso de carecer de cuenta -->
 

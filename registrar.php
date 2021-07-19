@@ -25,7 +25,7 @@ if (isset($_POST["registro"])) { //si se envia la orden de registro
         && !empty($_POST["surname"])
     ) {
         //revisamos en la base de datos si el usuario existe
-        $consulta = "SELECT Apodo FROM usuarios where Apodo='$nick'";
+        $consulta = "SELECT Apodo FROM usuarios where Apodo='$nick' AND email = '$email'";
         $resultado = mysqli_query($conex, $consulta);
 
         if ($resultado) {

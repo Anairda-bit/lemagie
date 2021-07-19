@@ -68,7 +68,8 @@ header ul li a {
 
     position: relative;
     margin-top: 100px;
-    width: 1280px;
+    width: 100%;
+    max-width: 1280px;
     height: 100vh;
     display: flex;
     align-items: center;

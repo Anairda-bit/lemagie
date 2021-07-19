@@ -38,7 +38,7 @@ body.active {
     position: relative;
     width: 800px;
     height: 500px;
-    margin: 20px;
+    padding: 20px;
 
 }
 
@@ -173,7 +173,7 @@ body.active {
     background: var(--color-purple-mountain-majesty);
     border: none;
     color: var(--color-Snow-color);
-    max-width: 100px;
+    /* max-width: 100px; */
     cursor: pointer;
     align-self: center;
     /* efecto cristal */
@@ -295,5 +295,23 @@ body.active {
 
     }
 
+    .withRegister .formBx {
+        height:600px;
 
+    }
+    
+
+}
+
+@media(max-width:420px) {
+
+    .withRegister {
+        height: 600px;
+    }
+
+    .violettBg {
+        box-shadow: none;
+    }
+
+    
 }

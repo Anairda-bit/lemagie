@@ -1,4 +1,5 @@
 <?php
+
 // con esta serie de funciones vamos a controlar el funcionamiento de la session
 function checkSession()
 { //Revisamos el estado de la sesion
@@ -12,15 +13,25 @@ function checkSession()
 
 function checkAuth()
 { //funcion para controlar el acceso a paginas de acceso solo con sesion iniciada
-
+    
     if (!isset($_SESSION['nick'])) {
 
-        header("Location: index.php");
+        echo "<script>window.location.href='index.php'</script>";
+
     }
 }
 
 function destroySession()
 { //funcion para destruir la sesion
-    session_destroy(); //metodo para destruir la sesion
-    header("Location: index.php");
+
+    
+    $_SESSION = array(); // destroy all $_SESSION data
+    setcookie("PHPSESSID", "", time() - 3600, "/");
+    session_destroy();
+    echo "<script>window.location.href='index.php'</script>";
+
+
 }
+
+
+?>

@@ -1,4 +1,5 @@
 <?php
+ob_start();
 // conecta a la base de datos 
 include("con_db.php");
 // inicializamos la variable mensaje error
@@ -57,4 +58,5 @@ if (isset($_POST["entrar"])) {
 
     // cerramos la conexion
     mysqli_close($conex);
+    ob_end_flush();
 }

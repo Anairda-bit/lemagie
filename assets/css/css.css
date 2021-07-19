@@ -152,6 +152,65 @@ header .content {
     display: block;
 }
 
+
+#formm #mensaje #inputBox:before {
+    content: "";
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    bottom: 5px;
+    height: 24px;
+    background-color: url(../img/invalid.png);
+    background-size: cover;
+    z-index: 100;
+}
+
+#formm #mensaje {
+    width: 300px;
+    background: var(--color-Snow-color);
+    outline: none;
+    padding: 2px;
+    border-radius: 6px;
+    color: var(--color-xinetic-color);
+}
+
+#mensaje {
+    display: block;
+    color: var(--color-Snow-color);
+    font-weight: 500i;
+    padding: 5px;
+
+}
+
+#formm #mensaje #inputBox:before {
+    content: "";
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    bottom: 5px;
+    height: 24px;
+    background-color: url(../img/invalid.png);
+    background-size: cover;
+    z-index: 100;
+}
+
+#formm #text {
+    width: 300px;
+    background: var(--color-Snow-color);
+    outline: none;
+    padding: 2px;
+    border-radius: 6px;
+    color: var(--color-xinetic-color);
+}
+
+#text {
+    display: block;
+    color: var(--color-Snow-color);
+    font-weight: 500i;
+    padding: 5px;
+
+}
+
 @media(max-width:991px) {
 
 

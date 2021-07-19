@@ -1,9 +1,10 @@
 <!-- codigo para el cierre de sesion -->
 <?php
-// incluimos el paquete funciones 
-include('inc/functions.php');
-// con el metodo checkSession revisamos el estado de la sesion
-checkSession();
-// destruimos la sesion actual
-destroySession();
+    // incluimos el paquete funciones 
+    include('inc/functions.php');
+    // con el metodo checkSession revisamos el estado de la sesion
+    checkSession();
+    // destruimos la sesion actual
+    destroySession();
+
 ?>

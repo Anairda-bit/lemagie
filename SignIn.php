@@ -3,6 +3,11 @@
 include('inc/functions.php');
 // llamamos al metodo que comprueba la sesion 
 checkSession();
+
+ //incluimos el archivo que comprueba el login
+ include("login.php");
+ // incluimos el archivo que comprueba los registros
+ include("registrar.php");
 ?>
 <!DOCTYPE html5>
 <html lang="es">
@@ -27,10 +32,7 @@ checkSession();
 
 <body>
     <?php
-    //incluimos el archivo que comprueba el login
-    include("login.php");
-    // incluimos el archivo que comprueba los registros
-    include("registrar.php");
+   
     ?>
     <main>
         <!-- creamos el formulario de login -->
